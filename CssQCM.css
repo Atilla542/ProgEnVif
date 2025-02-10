@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    justify-content: flex-start; /* Place le contenu en haut */
+    align-items: center; /* Centre horizontalement */
+    height: 100vh;
+    background: linear-gradient(120deg, #ff7eb3, #ff758c, #ffcd94);
+    background-size: 300% 300%;
+    animation: gradientBG 6s ease infinite;
+    color: white;
+  }
+
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .Bienvenue {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .quiz-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+    margin-top: 20px; /* Ajoute un espace entre le message de bienvenue et les questions */
+    color: black;
+  }
+
+  .question {
+    margin-bottom: 20px;
+  }
+
+  .question h2 {
+    text-align: left;
+  }
+
+  .options {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .options input {
+    margin-right: 10px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #0056b3;
+  }
+
+  .result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
